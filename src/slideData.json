@@ -43,12 +43,12 @@
     {
       "title": "4. Journey with AsyncAPI",
       "content": [
-        "Discovery through API documentation search",
-        "Started with documentation improvements",
-        "Graduated to feature implementations",
-        "Overcame initial challenges with API concepts",
-        "Grew into technical writing",
-        "Made significant community impact"
+        "Opened my first PR at AsyncAPI 1.5 year ago",
+        "Started with simple tasks like fixing CSS issues and moved on to more complex issues",
+        "Contributed to the financial summary page and added an adopters section to case studies",
+        "Worked on few scripts for the website and contributed to the JS to TS migration",
+        "Applied for GSoC and got selected to work on tests using Jest",
+        "Gained a deeper understanding of open source, production systems, and self-belief through dedication"
       ]
     },
     {
