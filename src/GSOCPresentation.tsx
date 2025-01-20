@@ -31,7 +31,7 @@ const GSOCPresentation = () => {
         "Founded in 2005 by Google to promote open source",
         "19,000+ students from 112 countries have completed GSoC",
         "Over 800 open source organizations supported",
-        "Paid remote internship (3-4 months) with one-on-one mentorship",
+        "Paid remote internship (12-22 weeks) with one-on-one mentorship",
         "Real-world project development with flexible working hours",
         "Many contributors become maintainers or work at major tech companies"
       ]
@@ -39,12 +39,11 @@ const GSOCPresentation = () => {
     {
       title: "3. GSoC Statistics 2024",
       content: [
-        "200+ mentor organizations and 1000+ mentors globally",
-        "Projects across 40+ programming languages",
-        "Web/Cloud (30%), AI/ML (25%), Development Tools (20%)",
-        "Scientific Computing (15%), Other (10%)",
+        "Over 2,800 mentors and organization administrators",
+        "43,984 applicants from 172 countries",
+        "9,107 proposals submitted by 6,518 applicants",
+        "1,220 GSoC contributors accepted from 73 countries",
         "80% completion rate",
-        "65% contributors continue involvement"
       ]
     },
     {
@@ -65,7 +64,7 @@ const GSOCPresentation = () => {
         "Understanding of software architecture",
         "Code review and collaboration skills",
         "30% higher interview success rate",
-        "Competitive stipend ($1,500-$6,000)",
+        "Competitive stipend ($750-$3,000)",
         "Conference invitations and networking opportunities"
       ]
     },
@@ -74,7 +73,7 @@ const GSOCPresentation = () => {
       content: [
         "Basic programming knowledge required",
         "Git fundamentals needed",
-        "Communication skills in English essential",
+        "Communication skills is essential",
         "Consistency valued over expertise",
         "Learning attitude over current knowledge",
         "Many first-time contributors and non-CS students succeed"
@@ -86,7 +85,7 @@ const GSOCPresentation = () => {
         "Master Git basics (clone, commit, push, pull)",
         "Learn one programming language well",
         "Familiarize with basic command line usage",
-        "Use resources like GitHub Learning Lab and freeCodeCamp",
+        "Use resources like Odin project and freeCodeCamp",
         "Set up development environment (VS Code, Git)",
         "Study organization-specific tutorials"
       ]
@@ -106,11 +105,8 @@ const GSOCPresentation = () => {
       title: "9. Eligibility Details",
       content: [
         "Must be 18+ years of age",
-        "Enrolled in accredited institution",
-        "Available worldwide with proper work authorization",
-        "Maximum two GSoC completions allowed",
-        "Gap year students eligible",
-        "Working professionals eligible if studying"
+        "Be a current student or working professional",
+        "Be eligible to work in the country you reside in",
       ]
     },
     {
@@ -132,7 +128,7 @@ const GSOCPresentation = () => {
         "Find and work on good first issues",
         "Follow proper fork and PR process",
         "Write clear commit messages",
-        "Maintain good test coverage"
+        "Maintain good code quality"
       ]
     },
     {
@@ -164,7 +160,7 @@ const GSOCPresentation = () => {
         "DO: Test thoroughly before submitting",
         "DO: Maintain regular communication",
         "DON'T: Submit untested code",
-        "DON'T: Miss community meetings",
+        "DON'T: Spam PRs",
         "DON'T: Copy other proposals"
       ]
     },
@@ -228,7 +224,7 @@ const GSOCPresentation = () => {
         {/* Header */}
         <div className="text-center mb-8 md:mb-12">
           <h1 className="text-3xl md:text-5xl font-bold text-indigo-800 mb-4">
-            Google Summer of Code 2024
+            Google Summer of Code
           </h1>
           <p className="text-lg md:text-xl text-indigo-600">
             Comprehensive Guide ({currentSlide + 1}/{slides.length})
