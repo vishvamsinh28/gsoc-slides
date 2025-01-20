@@ -6,7 +6,7 @@ const GSOCPresentation = () => {
 
   const slides = [
     {
-      title: "1. Introduction",
+      title: "Introduction",
       content: [
         "Hi! I am Vishvamsinh Vaghela, a 3rd-year Computer Science student at LJ University.",
         "I was selected for Google Summer of Code (GSoC) in 2024 with the Postman organization.",
