@@ -6,6 +6,15 @@ const GSOCPresentation = () => {
 
   const slides = [
     {
+      title: "1. Introduction",
+      content: [
+        "Hi! I am Vishvamsinh Vaghela, a 3rd-year Computer Science student at LJ University.",
+        "I was selected for Google Summer of Code (GSoC) in 2024 with the Postman organization.",
+        "I am passionate about open-source and web development."
+      ],
+      image: "/profile.jpeg",
+    },
+    {
       title: "1. What is Open Source?",
       content: [
         "Software with freely available source code for viewing, modification, and distribution",
@@ -231,17 +240,30 @@ const GSOCPresentation = () => {
           <h2 className="text-3xl font-bold mb-8 text-indigo-800">
             {slides[currentSlide].title}
           </h2>
-          <ul className="space-y-4">
-            {slides[currentSlide].content.map((item, index) => (
-              <li
-                key={index}
-                className="flex items-start space-x-3 text-lg text-gray-700"
-              >
-                <span className="text-indigo-500 font-bold mt-1">•</span>
-                <span>{item}</span>
-              </li>
-            ))}
-          </ul>
+          <div className="flex justify-between items-center mb-8">
+            <div className="flex-1">
+              <ul className="space-y-4">
+                {slides[currentSlide].content.map((item, index) => (
+                  <li
+                    key={index}
+                    className="flex items-start space-x-3 text-lg text-gray-700"
+                  >
+                    <span className="text-indigo-500 font-bold mt-1">•</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            {currentSlide === 0 && (
+              <div className="ml-8">
+                <img
+                  src={slides[currentSlide].image}
+                  alt="Vishvamsinh Vaghela"
+                  className="w-32 h-32 rounded-xl" // Square image with rounded borders
+                />
+              </div>
+            )}
+          </div>
         </div>
 
         {/* Navigation */}
@@ -249,11 +271,10 @@ const GSOCPresentation = () => {
           <button
             onClick={prevSlide}
             disabled={currentSlide === 0}
-            className={`p-4 rounded-full transition-colors ${
-              currentSlide === 0
-                ? 'text-gray-400 cursor-not-allowed'
-                : 'text-indigo-600 hover:bg-indigo-100'
-            }`}
+            className={`p-4 rounded-full transition-colors ${currentSlide === 0
+              ? 'text-gray-400 cursor-not-allowed'
+              : 'text-indigo-600 hover:bg-indigo-100'
+              }`}
           >
             <ChevronLeft size={24} />
           </button>
@@ -264,11 +285,10 @@ const GSOCPresentation = () => {
               <button
                 key={index}
                 onClick={() => setCurrentSlide(index)}
-                className={`w-3 h-3 rounded-full transition-colors ${
-                  currentSlide === index
-                    ? 'bg-indigo-600'
-                    : 'bg-indigo-200 hover:bg-indigo-300'
-                }`}
+                className={`w-3 h-3 rounded-full transition-colors ${currentSlide === index
+                  ? 'bg-indigo-600'
+                  : 'bg-indigo-200 hover:bg-indigo-300'
+                  }`}
               />
             ))}
           </div>
@@ -276,14 +296,20 @@ const GSOCPresentation = () => {
           <button
             onClick={nextSlide}
             disabled={currentSlide === slides.length - 1}
-            className={`p-4 rounded-full transition-colors ${
-              currentSlide === slides.length - 1
-                ? 'text-gray-400 cursor-not-allowed'
-                : 'text-indigo-600 hover:bg-indigo-100'
-            }`}
+            className={`p-4 rounded-full transition-colors ${currentSlide === slides.length - 1
+              ? 'text-gray-400 cursor-not-allowed'
+              : 'text-indigo-600 hover:bg-indigo-100'
+              }`}
           >
             <ChevronRight size={24} />
           </button>
+        </div>
+
+        {/* Footer */}
+        <div className="text-center mt-12">
+          <p className="text-lg text-indigo-600">
+            Created by <strong>Vishvamsinh Vaghela</strong>
+          </p>
         </div>
       </div>
     </div>
