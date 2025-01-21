@@ -96,7 +96,7 @@ const GSOCPresentation = () => {
         {/* Footer */}
         <div className="text-center mt-8 md:mt-12">
           <p className="text-lg text-indigo-600">
-            Created by <strong>Vishvamsinh Vaghela</strong>
+            Created by <strong><a href='https://www.github.com/vishvamsinh28'>Vishvamsinh Vaghela</a></strong>
           </p>
         </div>
       </div>
