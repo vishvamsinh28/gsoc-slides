@@ -226,5 +226,18 @@
       "Master Git commands and GitHub interface",
       "Study successful PRs and merged features"
     ]
+  },
+  {
+    "title": "19. Mentor's Advice",
+    "content": [
+      "Fancy proposals with unrealistic timelines or goals are the biggest red flags. Mentor's usually go for someone who has showcased their skills either through contributions to that organization or via a realistic plan laid out in the proposal with some technical background oriented to what the project is about"
+    ]
+  },
+  {
+    "title": "Thank You for Your Time",
+    "content": [
+      "Thank you for reading and engaging with the content. Best of luck with your open source journey!"
+    ]
   }
+  
 ]
