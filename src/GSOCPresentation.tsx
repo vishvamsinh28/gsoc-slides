@@ -28,11 +28,12 @@ const GSOCPresentation = () => {
         {/* Header */}
         <div className="flex justify-between items-center mb-6">
           <h1
-            className={`text-3xl sm:text-4xl font-bold ${
+            className={`text-2xl sm:text-3xl md:text-4xl font-bold ${
               darkMode ? 'text-gray-100' : 'text-gray-900'
             }`}
           >
-            Google Summer of Code
+            <span className="block sm:hidden">GSoC</span>
+            <span className="hidden sm:block">Google Summer of Code</span>
           </h1>
           <button
             onClick={toggleDarkMode}
@@ -47,7 +48,7 @@ const GSOCPresentation = () => {
           </button>
         </div>
 
-        <p className="text-lg mb-4 text-center">
+        <p className="text-lg sm:text-base mb-4 text-left">
           Comprehensive Guide ({currentSlide + 1}/{slides.length})
         </p>
 
