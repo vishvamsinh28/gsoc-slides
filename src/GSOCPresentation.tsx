@@ -18,6 +18,10 @@ const GSOCPresentation = () => {
     setDarkMode(!darkMode);
   };
 
+  const handleSlideChange = (event: any) => {
+    setCurrentSlide(parseInt(event.target.value, 10));
+  };
+
   return (
     <div
       className={`min-h-screen ${
@@ -96,11 +100,11 @@ const GSOCPresentation = () => {
         </div>
 
         {/* Navigation */}
-        <div className="flex justify-between items-center px-4">
+        <div className="flex flex-col sm:flex-row justify-between items-center px-4 space-y-4 sm:space-y-0">
           <button
             onClick={prevSlide}
             disabled={currentSlide === 0}
-            className={`p-3 md:p-4 rounded-full border transition ${
+            className={`p-2 sm:p-3 md:p-4 rounded-full border transition ${
               currentSlide === 0
                 ? 'border-gray-400 text-gray-400 cursor-not-allowed'
                 : darkMode
@@ -108,31 +112,35 @@ const GSOCPresentation = () => {
                 : 'border-blue-500 text-blue-500 hover:bg-blue-50'
             }`}
           >
-            <ChevronLeft size={28} />
+            <ChevronLeft size={18} className="sm:size-20 md:size-24 lg:size-10" />
           </button>
 
-          <div className="flex space-x-2 overflow-x-auto">
-            {slides.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => setCurrentSlide(index)}
-                className={`w-3 h-3 sm:w-4 sm:h-4 rounded-full transition ${
-                  currentSlide === index
-                    ? darkMode
-                      ? 'bg-blue-400'
-                      : 'bg-blue-600'
-                    : darkMode
-                    ? 'bg-gray-700 hover:bg-gray-600'
-                    : 'bg-gray-300 hover:bg-gray-400'
-                }`}
-              />
-            ))}
+          {/* Dropdown for Slide Selection with Titles */}
+          <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4">
+            <span className="text-sm sm:text-base">
+              Slide {currentSlide + 1} of {slides.length}
+            </span>
+            <select
+              value={currentSlide}
+              onChange={handleSlideChange}
+              className={`p-1 text-sm border rounded-md ${
+                darkMode
+                  ? 'bg-gray-700 text-gray-200 border-gray-600 focus:ring-blue-400 outline-none'
+                  : 'outline-none'
+              }`}              
+            >
+              {slides.map((slide, index) => (
+                <option key={index} value={index}>
+                  {slide.title}
+                </option>
+              ))}
+            </select>
           </div>
 
           <button
             onClick={nextSlide}
             disabled={currentSlide === slides.length - 1}
-            className={`p-3 md:p-4 rounded-full border transition ${
+            className={`p-2 sm:p-3 md:p-4 rounded-full border transition ${
               currentSlide === slides.length - 1
                 ? 'border-gray-400 text-gray-400 cursor-not-allowed'
                 : darkMode
@@ -140,7 +148,7 @@ const GSOCPresentation = () => {
                 : 'border-blue-500 text-blue-500 hover:bg-blue-50'
             }`}
           >
-            <ChevronRight size={28} />
+            <ChevronRight size={18} className="sm:size-20 md:size-24 lg:size-10" />
           </button>
         </div>
 
