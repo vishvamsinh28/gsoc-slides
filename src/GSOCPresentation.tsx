@@ -4,7 +4,7 @@ import slides from './slideData.json';
 
 const GSOCPresentation = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev === slides.length - 1 ? prev : prev + 1));
