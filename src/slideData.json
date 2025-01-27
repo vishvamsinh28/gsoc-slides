@@ -165,7 +165,19 @@
     ]
   },
   {
-    "title": "14. Dos and Don'ts",
+    "title": "14. Relation with Maintainer",
+    "content": [
+      "Build connection with the maintainer by engaging meaningfully in discussions and community activities.",
+      "Show respect for their time by asking well-researched, thoughtful questions.",
+      "Provide clear and concise communication about your progress, challenges, and plans.",
+      "Seek constructive feedback on your contributions and be open to implementing suggestions.",
+      "Express gratitude for their guidance and support, as maintainers are often volunteers investing their time.",
+      "Collaborate effectively by ensuring your work aligns with the project’s goals and community standards.",
+      "Establish a professional and positive relationship that could lead to mentorship and future opportunities."
+    ]
+  },
+  {
+    "title": "15. Dos and Don'ts",
     "content": [
       "DO: Document your work comprehensively to make it clear and understandable for others",
       "DO: Test your code thoroughly before submitting to ensure quality and functionality",
@@ -178,7 +190,7 @@
     ]
   },
   {
-    "title": "15. Timeline Breakdown",
+    "title": "16. Timeline Breakdown",
     "content": [
       "Timeline depends on the project size",
       "January: Organization applications",
@@ -190,19 +202,21 @@
     ]
   },
   {
-    "title": "16. Project Details",
+    "title": "17. Project Details",
     "content": [
-      "Size options: Small (~90 hours, $750) to Large (~350 hours, $3,000) for India",
-      "Flexible duration: 10 to 22 weeks, part-time (about 15-30 hours per week)",
+      "Project Size Options: Small (~175 hours) to Large (~350 hours)",
+      "Stipend Varies by Country:",
+      "India: Small (~$1,500), Large (~$3,000)",
+      "United States: Small (~$3,000), Large (~$6,000)",
+      "Stipend paid based on project size and country, distributed over the program's duration",
+      "Flexible Duration: 10 to 22 weeks, part-time (15-30 hours per week)",
       "Project scope varies based on size, from small bug fixes to large feature implementations",
       "Workload includes coding, documentation, testing, and community engagement",
-      "Size options: Small (~90h, $1,500) to Large (~350h, $6,000)",
-      "Stipend paid based on project size, distributed over the duration of the program",
       "Final deliverables should include well-documented, tested, and production-ready code"
     ]
   },
   {
-    "title": "17. Common Q&A",
+    "title": "18. Common Q&A",
     "content": [
       "Q: How do I know if I’m eligible for GSoC? A: You must be a student, at least 18 years old, and meet the eligibility requirements outlined by Google",
       "Q: Can I apply to multiple organizations? A: Yes, you can apply to multiple organizations, but you should tailor each proposal to fit the specific organization's needs",
@@ -217,7 +231,7 @@
     ]
   },
   {
-    "title": "18. Practical Demonstration",
+    "title": "19. Practical Demonstration",
     "content": [
       "Learn to find good first issues",
       "Practice making your first PR",
@@ -228,7 +242,7 @@
     ]
   },
   {
-    "title": "19. Mentor's Advice",
+    "title": "20. Mentor's Advice",
     "content": [
       "Fancy proposals with unrealistic timelines or goals are the biggest red flags. Mentor's usually go for someone who has showcased their skills either through contributions to that organization or via a realistic plan laid out in the proposal with some technical background oriented to what the project is about"
     ]
@@ -239,5 +253,4 @@
       "Thank you for reading and engaging with the content. Best of luck with your open source journey!"
     ]
   }
-  
 ]
